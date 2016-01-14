@@ -1,0 +1,20 @@
+div.logo
+	{
+	display:block;
+	padding-top:150px;
+	width:300px;
+	margin:auto;
+	}
+
+img {
+	}
+	
+#ros
+	{
+	position:relative;
+	left:215px;
+	top:-23px;
+	font-family:Arial;
+	font-size:16px;
+	color:blue;
+	}
