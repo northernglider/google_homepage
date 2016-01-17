@@ -1,12 +1,19 @@
 div.logo
 	{
 	display:block;
-	padding-top:150px;
-	width:300px;
+	padding-top:170px;
+	width:272px;
 	margin:auto;
 	}
 
-img {
+.upper_bar
+	{
+	float:right;
+	}
+	
+.upper_bar > div, .lower_bar > div
+	{
+	display:inline-block;
 	}
 	
 #ros
@@ -17,4 +24,80 @@ img {
 	font-family:Arial;
 	font-size:16px;
 	color:blue;
+	}
+	
+div.form
+	{
+	display:block;
+	margin:auto;
+	width:570px;
+	height:34px;
+	border:1px solid;
+	border-color:#c7c7c7;
+	}
+
+input.form
+	{
+	display:inline-block;
+	width:470px;
+	margin:6px;
+	font-size:1.1em;
+	border:none;
+	}
+	
+div.form:hover
+	{
+	border-color:#9b9b9b;
+	outline:none;
+	}
+	
+.form:focus,input.button:focus
+	{
+	border-color:#5376f4;
+    outline:none;
+	}
+	
+#small_buttons
+	{
+	display:inline-block;
+	}
+	
+div.buttons
+	{
+	margin:auto;
+	margin-top:40px;
+	width:275px;
+	}
+	
+div.buttons > div
+	{
+	display:inline-block;
+	}
+	
+input.button
+	{
+	font-weight:bold;
+	color:#5c5c5c;
+	background:#f0f0f0;
+	border:1px solid;
+	border-color:#f0f0f0;
+	border-radius:2px;
+	padding:10px 17px 10px 17px;
+	margin-left:3px;
+	margin-right:3px;
+	}
+	
+input.button:hover
+	{
+	border-color:#a1a1a1;
+	color:#171717;
+	background:#f3f3f3;
+    box-shadow: 0 1px 2px 0 #c0c0c0; /* Параметры тени */
+	}
+	
+.lower_bar
+	{
+	background-color:#f0f0f0;
+	position:absolute;
+	bottom:0;
 	}
