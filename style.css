@@ -1,7 +1,7 @@
 div.logo
 	{
 	display:block;
-	padding-top:170px;
+	padding-top:180px;
 	width:272px;
 	margin:auto;
 	}
@@ -11,13 +11,20 @@ div.logo
 	float:right;
 	}
 	
-.upper_bar > div, .lower_bar > div
+.upper_bar div
 	{
 	display:table-cell;
 	height:100%;
 	vertical-align:middle;
 	}
-	
+
+.lower_bar div
+	{
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+	}	
+
 #ros
 	{
 	position:relative;
@@ -41,6 +48,7 @@ div.form
 input.form
 	{
 	display:inline-block;
+	z-index: 2;
 	width:470px;
 	margin:6px;
 	font-size:1.1em;
@@ -63,6 +71,24 @@ div.form:hover
 	{
 	display:inline-block;
 	float:right;
+	}
+
+#keyboard
+	{
+	padding-bottom:7px;
+	}
+
+#keyboard:hover
+	{
+	
+	}
+	
+#mic
+	{
+	width:26px;
+	height:26px;
+	padding-top:4px;
+	padding-right:7px;
 	}
 	
 div.buttons
@@ -90,6 +116,26 @@ input.button
 	margin-right:3px;
 	}
 	
+.login_button
+	{
+	font-weight:bold;
+	color:white;
+	background:#4387fd;
+	border:1px solid;
+	border-color:#4387fd;
+	border-radius:2px;
+	margin-left:3px;
+	line-height:28px;
+	padding-left:13px;
+	padding-right:13px;
+	margin-right:20px;
+	}
+	
+.login_button:hover
+	{
+	box-shadow: 0 1px 2px 0 #c0c0c0;
+	}
+	
 input.button:hover
 	{
 	border-color:#a1a1a1;
@@ -110,11 +156,40 @@ input.button:hover
 	display:table;
 	}
 	
+.lower_bar > span
+	{
+	height:100%;
+	}
+
+.lower_bar a
+	{
+	vertical-align:-10px;
+	}
+	
+#left_lb
+	{
+	float:left;
+	}
+
+#right_lb
+	{
+	float:right;
+	}
+	
 .upper_bar a
 	{
 	text-decoration:none;
 	color:#171717;
 	font:10pt sans-serif;
+	margin-right:20px;
+	vertical-align:middle;
+	}
+	
+.upper_bar img
+	{
+	width:23px;
+	height:23px;
+	padding-top:6px;
 	}
 
 .lower_bar a
@@ -122,6 +197,21 @@ input.button:hover
 	text-decoration:none;
 	color:#5c5c5c;
 	font:10pt sans-serif;
+	}
+
+#left_lb div
+	{
+	padding-left:40px;
+	}
+	
+#right_lb div
+	{
+	padding-right:40px;
+	}
+	
+.lower_bar > *:nth-child(2n)
+	{
+	margin-left:-40px;
 	}
 	
 .upper_bar a:hover, .lower_bar a:hover
